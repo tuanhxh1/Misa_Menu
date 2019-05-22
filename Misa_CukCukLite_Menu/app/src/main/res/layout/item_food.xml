@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_food">
+        <ImageView
+            android:id="@+id/imgFood"
+            android:layout_alignParentLeft="true"
+            android:padding="16dp"
+            android:src="@drawable/_7_cocacola"
+            android:layout_width="@dimen/width_image_item_food"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/imgNavigateNext"
+            android:layout_toRightOf="@+id/imgFood" >
+
+            <TextView
+                android:id="@+id/tvItemFood"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Bò húc"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:text="Giá bán: 12000"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imgNavigateNext"
+            android:layout_alignParentRight="true"
+            android:padding="16dp"
+            android:src="@drawable/ic_navigate_next"
+            android:layout_width="@dimen/width_image_item_food"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

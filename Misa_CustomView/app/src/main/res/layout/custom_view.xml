@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:padding="14dp"
+            android:src="@drawable/ic_account"
+            android:id="@+id/imgImage"
+            android:layout_alignParentLeft="true"
+            android:layout_width="60dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tvPerson"
+            android:text="ABC"
+            android:layout_toLeftOf="@+id/imgNext"
+            android:layout_toRightOf="@+id/imgImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:padding="14dp"
+            android:src="@drawable/ic_next"
+            android:id="@+id/imgNext"
+            android:layout_alignParentRight="true"
+            android:layout_width="60dp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</LinearLayout>
